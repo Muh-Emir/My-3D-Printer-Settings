@@ -174,9 +174,9 @@
     #define LCD_PINS_D5     73
     #define LCD_PINS_D6     74
     #define LCD_PINS_D7     75
-
+//My-Edit
     #if ENABLED(VIKI2) || ENABLED(miniVIKI)
-      #define BEEPER_PIN   44
+      #define BEEPER_PIN   -1
       // NB: Panucatt's Viki 2.0 wiring diagram (v1.2) indicates that the
       //     beeper/buzzer is connected to pin 33; however, the pin used in the
       //     diagram is actually pin 44, so this is correct.
@@ -199,8 +199,8 @@
       #define BEEPER_PIN   79   // AUX-4
 
       // AUX-2
-      #define BTN_EN1      76
-      #define BTN_EN2      77
+      #define BTN_EN1      77
+      #define BTN_EN2      76
       #define BTN_ENC      78
 
       #define SD_DETECT_PIN 81

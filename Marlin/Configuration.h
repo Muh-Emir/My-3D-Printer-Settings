@@ -1621,7 +1621,7 @@
 // Note: The PANELOLU2 encoder click input can either be directly connected to
 // a pin (if BTN_ENC defined to != -1) or read through I2C (when BTN_ENC == -1).
 //
-//#define LCD_I2C_PANELOLU2
+#define LCD_I2C_PANELOLU2
 
 //
 // Panucatt VIKI LCD with status LEDs,
@@ -1661,9 +1661,6 @@
 #define ST7920_DELAY_3 DELAY_NS(250)
 #define DOGLCD
 #define U8GLIB_ST7920
-#define REPRAP_DISCOUNT_SMART_CONTROLLER
-#define ENCODER_PULSES_PER_STEP 4
-#define ENCODER_STEPS_PER MENU_ITEM 1
 //yeni
 //automatic expansion
 #if defined (MAKRPANEL)
@@ -1678,6 +1675,8 @@
  #define DOGLCD
  #define U8GLIB_ST7920
  #define REPRAP_DISCOUNT_SMART_CONTROLLER
+ #define ENCODER_PULSES_PER_STEP 4
+ #define ENCODER_STEPS_PER MENU_ITEM 1
 #endif
 
 #if defined(ULTIMAKERCONTROLLER) || defined(REPRAP_DISCOUNT_SMART_CONTROLLER) || defined(G3D_PANEL)
@@ -1689,12 +1688,14 @@
   #define NEWPANEL
   #define ULTIPANEL
 #endif
+
 #if defined(RA_CONTROL_PANEL)
  #define ULTIPANEL
  #define NEWPANEL
  #define LCD_I2C_TYPE_PCA8574
  #define LCD_I2C_ADDRESS 0x27   // I2C Address of the port expander
 #endif
+
 //2
 #ifdef ULTIPANEL
 //  #define NEWPANEL  //enable this if you have a click-encoder panel
