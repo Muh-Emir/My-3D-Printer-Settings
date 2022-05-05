@@ -1621,7 +1621,7 @@
 // Note: The PANELOLU2 encoder click input can either be directly connected to
 // a pin (if BTN_ENC defined to != -1) or read through I2C (when BTN_ENC == -1).
 //
-#define LCD_I2C_PANELOLU2
+//#define LCD_I2C_PANELOLU2
 
 //
 // Panucatt VIKI LCD with status LEDs,
@@ -1656,11 +1656,11 @@
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //Ekrans
 #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define DOGLCD
+#define U8GLIB_ST7920
 #define ST7920_DELAY_1 DELAY_NS(0) 
 #define ST7920_DELAY_2 DELAY_NS(250) 
 #define ST7920_DELAY_3 DELAY_NS(250)
-#define DOGLCD
-#define U8GLIB_ST7920
 //yeni
 //automatic expansion
 #if defined (MAKRPANEL)
